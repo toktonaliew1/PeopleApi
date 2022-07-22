@@ -1,15 +1,12 @@
-package com.example.android4hw1.ui.adapters
+package com.example.peopleapi.ui.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android4hw1.models.PeopleModel
+import com.example.peopleapi.models.PeopleModel
 import com.example.peopleapi.databinding.ItemPeopleBinding
-
-
-import kotlin.reflect.KFunction1
 
 class PeopleAdapter(private val itemClick: (id: String) -> Unit) :
     androidx.recyclerview.widget.ListAdapter<PeopleModel, PeopleAdapter.ViewHolder>(diffCallback) {

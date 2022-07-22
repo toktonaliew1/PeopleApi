@@ -1,7 +1,7 @@
-package com.example.android4hw1.data.remote.apiservices
+package com.example.peopleapi.data.apiservices
 
-import com.example.android4hw1.models.DetailPeopleModel
-import com.example.android4hw1.models.PeopleModel
+import com.example.peopleapi.models.DetailPeopleModel
+import com.example.peopleapi.models.PeopleModel
 import retrofit2.http.GET
 import retrofit2.http.Path
 

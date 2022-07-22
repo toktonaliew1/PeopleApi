@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.details.DetailPeopleFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="15dp"
         app:cardBackgroundColor="#33979797"
         app:cardCornerRadius="10dp"
-        android:padding="15dp"
-        android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:padding="8dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="8dp">
 
             <TextView
-                android:id="@+id/item_people_gender"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@id/item_people_name"
-                app:layout_constraintLeft_toLeftOf="parent" />
+                android:text="name: "
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_people_name" />
 
             <TextView
                 android:id="@+id/item_people_name"
@@ -40,9 +38,39 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="normal"
-                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/name"
                 app:layout_constraintTop_toBottomOf="@id/item_people_gender"
                 app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender: "
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_people_gender" />
+
+            <TextView
+                android:id="@+id/item_people_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toRightOf="@id/gender"
+                app:layout_constraintTop_toBottomOf="@id/item_people_name" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="age "
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_people_age" />
 
             <TextView
                 android:id="@+id/item_people_age"
@@ -52,9 +80,18 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="normal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/item_people_name" />
+                app:layout_constraintLeft_toRightOf="@id/age"
+                app:layout_constraintTop_toBottomOf="@id/item_people_gender" />
 
+
+            <TextView
+                android:id="@+id/eye_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eye color: "
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_people_eye_color" />
 
             <TextView
                 android:id="@+id/item_people_eye_color"
@@ -64,9 +101,17 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="normal"
-                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/eye_color"
                 app:layout_constraintTop_toBottomOf="@id/item_people_age" />
 
+            <TextView
+                android:id="@+id/hair_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hair color: "
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_people_eye_color" />
 
             <TextView
                 android:id="@+id/item_people_hair_color"
@@ -76,7 +121,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="normal"
-                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/hair_color"
                 app:layout_constraintTop_toBottomOf="@id/item_people_eye_color" />
 
 

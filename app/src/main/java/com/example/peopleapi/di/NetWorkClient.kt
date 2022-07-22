@@ -1,4 +1,4 @@
-package com.example.android4hw1.di
+package com.example.peopleapi.di
 
 import com.example.peopleapi.data.remote.NetWorkClient
 import dagger.Module

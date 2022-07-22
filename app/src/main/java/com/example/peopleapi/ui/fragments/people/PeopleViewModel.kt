@@ -1,4 +1,4 @@
-package com.example.android4hw1.ui.fragments.heroes
+package com.example.peopleapi.ui.fragments.people
 
 import com.example.android4hw1.data.repository.PeopleRepository
 import com.example.peopleapi.base.BaseViewModel

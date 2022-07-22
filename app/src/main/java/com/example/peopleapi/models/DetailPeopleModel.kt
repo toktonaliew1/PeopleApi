@@ -1,4 +1,4 @@
-package com.example.android4hw1.models
+package com.example.peopleapi.models
 
 import com.google.gson.annotations.SerializedName
 
